@@ -1,0 +1,1255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile xmlns="http://www.ni.com/PlatformFramework">
+    <SourceModelFeatureSet>
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="3.0.0.49154" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="Editor" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/PlatformFramework" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="Common Language Components" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/MocCommon" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="3.0.0.49153" />
+    </SourceModelFeatureSet>
+    <VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+        <Icon Id="2" ListViewIconCrop="0 0 50 50" xmlns="http://www.ni.com/PlatformFramework">
+            <IconPanel Height="[float]50" Id="3" Width="[float]50">
+                <IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" TemplateName="Gray">
+                    <Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" />
+                    <Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" />
+                    <FileNameText FileNameText="[bool]True" Font="[SMFont]0,6," HorizontalAlignment="[HorizontalAlignment]Left" Id="7" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]frame_align_sp" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" VerticalAlignment="[VerticalAlignment]Top" />
+                </IconTemplate>
+                <Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Id="8" Margin="[SMThickness]3,3,3,3">
+                    <Path Data="[PathGeometry]M 27,0 L 27,5 L 26,5 L 26,0 L 24,0 L 24,3 L 23,3 L 23,0 L 21,0 L 21,5 L 20,5 L 20,0 L 18,0 L 18,3 L 17,3 L 17,0 L 15,0 L 15,5 L 14,5 L 14,0 L 12,0 L 12,3 L 11,3 L 11,0 L 9,0 L 9,5 L 8,5 L 8,0 L 6,0 L 6,3 L 5,3 L 5,0 L 3,0 L 3,5 L 2,5 L 2,0 L 0,0 L 0,9 L 32,9 L 32,0 L 30,0 L 30,3 L 29,3 L 29,0 L 27,0 Z" EditMode="[ShapeEditMode]FixedPath" Fill="[SMSolidColorBrush]#b2000000" Height="[float]9" Id="210" Left="[float]9" MinHeight="[float]1" MinWidth="[float]1" Top="[float]30" Width="[float]32" />
+                </Canvas>
+            </IconPanel>
+        </Icon>
+        <ConnectorPane Height="50" Id="9" ListViewHeight="105" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
+            <ConnectorPaneTerminal ListViewHotspot="0 80" Parameter="246" />
+            <ConnectorPaneTerminal Hotspot="0 15" />
+            <ConnectorPaneTerminal Hotspot="0 25" />
+            <ConnectorPaneTerminal Hotspot="0 35" />
+            <ConnectorPaneTerminal Hotspot="0 45" />
+            <ConnectorPaneTerminal Hotspot="15 0" ListViewHotspot="0 50" Parameter="133" />
+            <ConnectorPaneTerminal Hotspot="25 0" ListViewHotspot="0 65" Parameter="135" />
+            <ConnectorPaneTerminal Hotspot="35 0" />
+            <ConnectorPaneTerminal Hotspot="50 5" ListViewHotspot="150 95" Parameter="250" />
+            <ConnectorPaneTerminal Hotspot="50 15" />
+            <ConnectorPaneTerminal Hotspot="50 25" ListViewHotspot="150 35" Parameter="134" />
+            <ConnectorPaneTerminal Hotspot="50 35" />
+            <ConnectorPaneTerminal Hotspot="50 45" />
+            <ConnectorPaneTerminal Hotspot="15 50" />
+            <ConnectorPaneTerminal Hotspot="25 50" />
+            <ConnectorPaneTerminal Hotspot="35 50" />
+        </ConnectorPane>
+        <MethodDocumentation xmlns="http://www.ni.com/PlatformFramework" />
+        <DiagramUnplacedItems Id="10" />
+        <FrontPanelUnplacedItems Id="11">
+            <StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]22" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="139" IsReadOnly="[bool]False" Label="[UIModel]140" Left="[float]448" Text="{DataItemBinding Id=133}" Top="[float]217" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]90" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Label Id="140" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]139" Left="[float]448" Locked="[bool]True" Text="[string]magic head" Top="[float]194" />
+            <ArrayViewer ArrayElement="[UIModel]142" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Id="141" Name="[string]aligned data" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Value="{DataItemBinding Id=134}" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                <p.DefaultElementValue>0</p.DefaultElementValue>
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="142" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Name="[string]Child" ValueType="[Type]UInt8" Width="[float]54" />
+            </ArrayViewer>
+            <NumericText BaseName="[string]Numeric" Height="[float]22" Id="143" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Name="[string]magic number" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Collapsed" Value="{DataItemBinding Id=135}" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]40" Id="247" Name="[string]Input" RefnumType="[Type]@837937679_0" Value="{DataItemBinding Id=246}" Width="[float]80" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]40" Id="251" Name="[string]Output" RefnumType="[Type]@837937679_0" Value="{DataItemBinding Id=250}" Width="[float]80" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+        </FrontPanelUnplacedItems>
+        <BlockDiagram Id="12">
+            <DataAccessor Bounds="245 410 40 15" DataItem="133" Id="15" Label="127">
+                <Terminal DataType="String" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <DataAccessor Bounds="785 340 40 15" DataItem="134" Id="16" Label="128">
+                <Terminal DataType="UInt8[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <DataAccessor Bounds="235 240 40 15" DataItem="135" Id="17" Label="129">
+                <Terminal DataType="UInt32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <WhileLoop Bounds="355 215 400 265" DiagramId="23" Id="22">
+                <WhileLoop.Iteration Bounds="5 235 15 15" Id="31" />
+                <WhileLoop.Condition Bounds="370 235 15 15" Id="32" />
+                <TypeCast Bounds="150 140 30 15" Id="190" />
+                <IsEqual Bounds="270 175 30 30" Id="152" />
+                <StringSubset Bounds="195 140 40 40" Id="151" />
+                <Literal Bounds="183 160 12 10" DataType="Int32" Facade="DockedConstantFacade" Id="154" Label="156" xmlns="http://www.ni.com/MocCommon">
+                    <p.Data>0</p.Data>
+                    <NumericBehavior Interpretation="Exact" ValueFormatter="LV:" />
+                    <DockedConstantFacade UndockedBounds="0 130 40 15" />
+                </Literal>
+                <Wire Facade="WireInvisibleFacade" Id="155" Joints="N(154:Out) N(151:offset (0\))" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+                <TextNode AttachedTo="154" Bounds="183 160 0 0" Id="156" Text="offset" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="198" Joints="N(197:23) h(176) v(15) N(151:length (rest\))" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="199" Joints="N(190:*(type *\) &amp;x) N(151:string)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="200" Joints="N(171:23) N(152:y)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="201" Joints="N(151:substring) h(5) v(35) N(152:x)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="209" Joints="N(152:x = y?) h(65) v(50) N(32:Input)" xmlns="http://www.ni.com/PlatformFramework" />
+                <HostFifoReadNode Bounds="100 65 40 40" FifoName="decode fifo up" Id="253" Label="254" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+                <TextNode AttachedTo="253" Bounds="100 46 92 16" Id="254" IsReadOnly="True" Text="Read DMA FIFO" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="255" Joints="N(238:23) N(253:FPGA VI Reference In)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="256" Joints="N(253:FPGA VI Reference Out) N(257:23)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="259" Joints="N(253:Data) h(5) B(1) N(260:23) B(1) v(65) N(190:x)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="264" Joints="N(263:23) N(253:Number of Elements)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Literal Bounds="88 86 12 10" DataType="Int32" Facade="DockedConstantFacade" Id="265" Label="266" xmlns="http://www.ni.com/MocCommon">
+                    <p.Data>-1</p.Data>
+                    <NumericBehavior Interpretation="Exact" ValueFormatter="LV:" />
+                    <DockedConstantFacade LabelPosition="Top" UndockedBounds="16 105 40 15" />
+                </Literal>
+                <Wire Facade="WireInvisibleFacade" Id="267" Joints="N(265:Out) h(-5) v(-1) N(253:Timeout (ms\))" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+                <TextNode AttachedTo="265" Bounds="88 86 0 0" Id="266" Text="timeout (ms)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+                <WhileLoop.Tunnel Bounds="-4 195 13 10" Docking="Left" Id="171" Terminals="22=170, 23=200" />
+                <WhileLoop.Tunnel Bounds="-4 160 13 10" Docking="Left" Id="197" Terminals="22=196, 23=198" />
+                <WhileLoop.Tunnel Bounds="-4 70 13 10" Docking="Left" Id="238" Terminals="22=239, 23=255" />
+                <WhileLoop.Tunnel Bounds="391 70 13 10" Docking="Right" Id="257" Terminals="22=258, 23=256" />
+                <WhileLoop.Tunnel Bounds="391 80 13 10" Docking="Right" Id="260" Terminals="22=261, 23=259" />
+                <WhileLoop.Tunnel Bounds="-4 80 13 10" Docking="Left" Id="263" Terminals="22=262, 23=264" />
+            </WhileLoop>
+            <TextNode AttachedTo="15" Bounds="173 410 67 16" Id="127" Text="magic head" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="16" Bounds="830 340 72 16" Id="128" Text="aligned data" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="17" Bounds="146 240 84 16" Id="129" Text="magic number" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="170" Joints="N(15:Value) h(15) B(1) N(171:22) B(1) v(-35) N(195:string)" xmlns="http://www.ni.com/PlatformFramework" />
+            <StringLength Bounds="305 375 40 20" Id="195" />
+            <Wire Id="196" Joints="N(195:length) N(197:22)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="239" Joints="N(244:Value) N(238:22)" xmlns="http://www.ni.com/PlatformFramework" />
+            <DataAccessor Bounds="235 285 40 15" DataItem="246" Id="244" Label="245">
+                <Terminal DataType="@837937679_0" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="244" Bounds="199 285 31 16" Id="245" Text="Input" xmlns="http://www.ni.com/PlatformFramework" />
+            <DataAccessor Bounds="790 285 40 15" DataItem="250" Id="248" Label="249">
+                <Terminal DataType="@837937679_0" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="248" Bounds="835 285 42 16" Id="249" Text="Output" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="258" Joints="N(257:22) N(248:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="261" Joints="N(260:22) h(19) v(45) N(16:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="262" Joints="N(17:Value) h(10) v(55) N(263:22)" xmlns="http://www.ni.com/PlatformFramework" />
+        </BlockDiagram>
+        <CPFrontPanel Height="[float]1600" Id="13" Width="[float]2000" />
+        <DataItem CallDirection="Input" CallIndex="1" DataType="String" Id="133" Name="magic head">
+            <p.DefaultValue>VLC</p.DefaultValue>
+        </DataItem>
+        <DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="1" DataType="UInt8[]" Id="134" Name="aligned data" />
+        <DataItem CallDirection="Input" CallIndex="2" DataType="UInt32" Id="135" Name="magic number">
+            <p.DefaultValue>449</p.DefaultValue>
+        </DataItem>
+        <DataItem CallDirection="Input" CallIndex="0" DataType="@837937679_0" Id="246" Name="Input">
+            <p.DefaultValue>0</p.DefaultValue>
+        </DataItem>
+        <DataItem CallDirection="Output" CallIndex="0" DataType="@837937679_0" Id="250" Name="Output">
+            <p.DefaultValue>0</p.DefaultValue>
+        </DataItem>
+        <DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+            <p.TypeReference TypeId="837937679_0">
+                <Attributed>
+                    <AttributedType>
+                        <Generic>
+                            <Constraints>
+                                <Class Id="1" Name="IFPGAReferenceDataType" ReferenceClass="" Interface="">
+                                    <ClosedGenericParameters />
+                                    <GenericTypeDefinition>
+                                        <Void />
+                                    </GenericTypeDefinition>
+                                    <BaseType>
+                                        <Void />
+                                    </BaseType>
+                                    <Interfaces />
+                                    <Members />
+                                </Class>
+                                <Class Id="2" Name="decode max limt" ReferenceClass="" Interface="">
+                                    <ClosedGenericParameters>
+                                        <Int32 />
+                                    </ClosedGenericParameters>
+                                    <GenericTypeDefinition>
+                                        <Class Id="3" Name="decode max limt" ReferenceClass="" Interface="">
+                                            <GenericParameters>
+                                                <Typedef TypedefName="T">
+                                                    <UnderlyingType>
+                                                        <Generic>
+                                                            <Constraints />
+                                                        </Generic>
+                                                    </UnderlyingType>
+                                                </Typedef>
+                                            </GenericParameters>
+                                            <GenericTypeDefinition>
+                                                <Class RefId="3" />
+                                            </GenericTypeDefinition>
+                                            <BaseType>
+                                                <Void />
+                                            </BaseType>
+                                            <Interfaces />
+                                            <Members>
+                                                <Field FieldAccessPolicy="ReadWrite" Name="decode max limt">
+                                                    <DataType>
+                                                        <Typedef TypedefName="T">
+                                                            <UnderlyingType>
+                                                                <Generic>
+                                                                    <Constraints />
+                                                                </Generic>
+                                                            </UnderlyingType>
+                                                        </Typedef>
+                                                    </DataType>
+                                                </Field>
+                                            </Members>
+                                        </Class>
+                                    </GenericTypeDefinition>
+                                    <BaseType>
+                                        <Void />
+                                    </BaseType>
+                                    <Interfaces />
+                                    <Members>
+                                        <Field FieldAccessPolicy="ReadWrite" Name="decode max limt">
+                                            <DataType>
+                                                <Int32 />
+                                            </DataType>
+                                        </Field>
+                                    </Members>
+                                </Class>
+                                <Class Id="4" Name="decode min limit" ReferenceClass="" Interface="">
+                                    <ClosedGenericParameters>
+                                        <Int32 />
+                                    </ClosedGenericParameters>
+                                    <GenericTypeDefinition>
+                                        <Class Id="5" Name="decode min limit" ReferenceClass="" Interface="">
+                                            <GenericParameters>
+                                                <Typedef TypedefName="T">
+                                                    <UnderlyingType>
+                                                        <Generic>
+                                                            <Constraints />
+                                                        </Generic>
+                                                    </UnderlyingType>
+                                                </Typedef>
+                                            </GenericParameters>
+                                            <GenericTypeDefinition>
+                                                <Class RefId="5" />
+                                            </GenericTypeDefinition>
+                                            <BaseType>
+                                                <Void />
+                                            </BaseType>
+                                            <Interfaces />
+                                            <Members>
+                                                <Field FieldAccessPolicy="ReadWrite" Name="decode min limit">
+                                                    <DataType>
+                                                        <Typedef TypedefName="T">
+                                                            <UnderlyingType>
+                                                                <Generic>
+                                                                    <Constraints />
+                                                                </Generic>
+                                                            </UnderlyingType>
+                                                        </Typedef>
+                                                    </DataType>
+                                                </Field>
+                                            </Members>
+                                        </Class>
+                                    </GenericTypeDefinition>
+                                    <BaseType>
+                                        <Void />
+                                    </BaseType>
+                                    <Interfaces />
+                                    <Members>
+                                        <Field FieldAccessPolicy="ReadWrite" Name="decode min limit">
+                                            <DataType>
+                                                <Int32 />
+                                            </DataType>
+                                        </Field>
+                                    </Members>
+                                </Class>
+                                <Class Id="6" Name="decode length" ReferenceClass="" Interface="">
+                                    <ClosedGenericParameters>
+                                        <Int32 />
+                                    </ClosedGenericParameters>
+                                    <GenericTypeDefinition>
+                                        <Class Id="7" Name="decode length" ReferenceClass="" Interface="">
+                                            <GenericParameters>
+                                                <Typedef TypedefName="T">
+                                                    <UnderlyingType>
+                                                        <Generic>
+                                                            <Constraints />
+                                                        </Generic>
+                                                    </UnderlyingType>
+                                                </Typedef>
+                                            </GenericParameters>
+                                            <GenericTypeDefinition>
+                                                <Class RefId="7" />
+                                            </GenericTypeDefinition>
+                                            <BaseType>
+                                                <Void />
+                                            </BaseType>
+                                            <Interfaces />
+                                            <Members>
+                                                <Field FieldAccessPolicy="ReadWrite" Name="decode length">
+                                                    <DataType>
+                                                        <Typedef TypedefName="T">
+                                                            <UnderlyingType>
+                                                                <Generic>
+                                                                    <Constraints />
+                                                                </Generic>
+                                                            </UnderlyingType>
+                                                        </Typedef>
+                                                    </DataType>
+                                                </Field>
+                                            </Members>
+                                        </Class>
+                                    </GenericTypeDefinition>
+                                    <BaseType>
+                                        <Void />
+                                    </BaseType>
+                                    <Interfaces />
+                                    <Members>
+                                        <Field FieldAccessPolicy="ReadWrite" Name="decode length">
+                                            <DataType>
+                                                <Int32 />
+                                            </DataType>
+                                        </Field>
+                                    </Members>
+                                </Class>
+                                <Class Id="8" Name="vlc stat tag" ReferenceClass="" Interface="">
+                                    <ClosedGenericParameters>
+                                        <Boolean />
+                                    </ClosedGenericParameters>
+                                    <GenericTypeDefinition>
+                                        <Class Id="9" Name="vlc stat tag" ReferenceClass="" Interface="">
+                                            <GenericParameters>
+                                                <Typedef TypedefName="T">
+                                                    <UnderlyingType>
+                                                        <Generic>
+                                                            <Constraints />
+                                                        </Generic>
+                                                    </UnderlyingType>
+                                                </Typedef>
+                                            </GenericParameters>
+                                            <GenericTypeDefinition>
+                                                <Class RefId="9" />
+                                            </GenericTypeDefinition>
+                                            <BaseType>
+                                                <Void />
+                                            </BaseType>
+                                            <Interfaces />
+                                            <Members>
+                                                <Field FieldAccessPolicy="ReadWrite" Name="vlc stat tag">
+                                                    <DataType>
+                                                        <Typedef TypedefName="T">
+                                                            <UnderlyingType>
+                                                                <Generic>
+                                                                    <Constraints />
+                                                                </Generic>
+                                                            </UnderlyingType>
+                                                        </Typedef>
+                                                    </DataType>
+                                                </Field>
+                                            </Members>
+                                        </Class>
+                                    </GenericTypeDefinition>
+                                    <BaseType>
+                                        <Void />
+                                    </BaseType>
+                                    <Interfaces />
+                                    <Members>
+                                        <Field FieldAccessPolicy="ReadWrite" Name="vlc stat tag">
+                                            <DataType>
+                                                <Boolean />
+                                            </DataType>
+                                        </Field>
+                                    </Members>
+                                </Class>
+                                <Class Id="10" Name="decodeFFTsize" ReferenceClass="" Interface="">
+                                    <ClosedGenericParameters>
+                                        <UInt16 />
+                                    </ClosedGenericParameters>
+                                    <GenericTypeDefinition>
+                                        <Class Id="11" Name="decodeFFTsize" ReferenceClass="" Interface="">
+                                            <GenericParameters>
+                                                <Typedef TypedefName="T">
+                                                    <UnderlyingType>
+                                                        <Generic>
+                                                            <Constraints />
+                                                        </Generic>
+                                                    </UnderlyingType>
+                                                </Typedef>
+                                            </GenericParameters>
+                                            <GenericTypeDefinition>
+                                                <Class RefId="11" />
+                                            </GenericTypeDefinition>
+                                            <BaseType>
+                                                <Void />
+                                            </BaseType>
+                                            <Interfaces />
+                                            <Members>
+                                                <Field FieldAccessPolicy="ReadWrite" Name="decodeFFTsize">
+                                                    <DataType>
+                                                        <Typedef TypedefName="T">
+                                                            <UnderlyingType>
+                                                                <Generic>
+                                                                    <Constraints />
+                                                                </Generic>
+                                                            </UnderlyingType>
+                                                        </Typedef>
+                                                    </DataType>
+                                                </Field>
+                                            </Members>
+                                        </Class>
+                                    </GenericTypeDefinition>
+                                    <BaseType>
+                                        <Void />
+                                    </BaseType>
+                                    <Interfaces />
+                                    <Members>
+                                        <Field FieldAccessPolicy="ReadWrite" Name="decodeFFTsize">
+                                            <DataType>
+                                                <UInt16 />
+                                            </DataType>
+                                        </Field>
+                                    </Members>
+                                </Class>
+                                <Class Id="12" Name="decode frame length" ReferenceClass="" Interface="">
+                                    <ClosedGenericParameters>
+                                        <UInt16 />
+                                    </ClosedGenericParameters>
+                                    <GenericTypeDefinition>
+                                        <Class Id="13" Name="decode frame length" ReferenceClass="" Interface="">
+                                            <GenericParameters>
+                                                <Typedef TypedefName="T">
+                                                    <UnderlyingType>
+                                                        <Generic>
+                                                            <Constraints />
+                                                        </Generic>
+                                                    </UnderlyingType>
+                                                </Typedef>
+                                            </GenericParameters>
+                                            <GenericTypeDefinition>
+                                                <Class RefId="13" />
+                                            </GenericTypeDefinition>
+                                            <BaseType>
+                                                <Void />
+                                            </BaseType>
+                                            <Interfaces />
+                                            <Members>
+                                                <Field FieldAccessPolicy="ReadWrite" Name="decode frame length">
+                                                    <DataType>
+                                                        <Typedef TypedefName="T">
+                                                            <UnderlyingType>
+                                                                <Generic>
+                                                                    <Constraints />
+                                                                </Generic>
+                                                            </UnderlyingType>
+                                                        </Typedef>
+                                                    </DataType>
+                                                </Field>
+                                            </Members>
+                                        </Class>
+                                    </GenericTypeDefinition>
+                                    <BaseType>
+                                        <Void />
+                                    </BaseType>
+                                    <Interfaces />
+                                    <Members>
+                                        <Field FieldAccessPolicy="ReadWrite" Name="decode frame length">
+                                            <DataType>
+                                                <UInt16 />
+                                            </DataType>
+                                        </Field>
+                                    </Members>
+                                </Class>
+                                <Class Id="14" Name="decode pilot length" ReferenceClass="" Interface="">
+                                    <ClosedGenericParameters>
+                                        <UInt16 />
+                                    </ClosedGenericParameters>
+                                    <GenericTypeDefinition>
+                                        <Class Id="15" Name="decode pilot length" ReferenceClass="" Interface="">
+                                            <GenericParameters>
+                                                <Typedef TypedefName="T">
+                                                    <UnderlyingType>
+                                                        <Generic>
+                                                            <Constraints />
+                                                        </Generic>
+                                                    </UnderlyingType>
+                                                </Typedef>
+                                            </GenericParameters>
+                                            <GenericTypeDefinition>
+                                                <Class RefId="15" />
+                                            </GenericTypeDefinition>
+                                            <BaseType>
+                                                <Void />
+                                            </BaseType>
+                                            <Interfaces />
+                                            <Members>
+                                                <Field FieldAccessPolicy="ReadWrite" Name="decode pilot length">
+                                                    <DataType>
+                                                        <Typedef TypedefName="T">
+                                                            <UnderlyingType>
+                                                                <Generic>
+                                                                    <Constraints />
+                                                                </Generic>
+                                                            </UnderlyingType>
+                                                        </Typedef>
+                                                    </DataType>
+                                                </Field>
+                                            </Members>
+                                        </Class>
+                                    </GenericTypeDefinition>
+                                    <BaseType>
+                                        <Void />
+                                    </BaseType>
+                                    <Interfaces />
+                                    <Members>
+                                        <Field FieldAccessPolicy="ReadWrite" Name="decode pilot length">
+                                            <DataType>
+                                                <UInt16 />
+                                            </DataType>
+                                        </Field>
+                                    </Members>
+                                </Class>
+                                <Class Id="16" Name="pilotArray" ReferenceClass="" Interface="">
+                                    <ClosedGenericParameters>
+                                        <SizedArray LowerBound="16" UpperBound="16">
+                                            <DereferenceType>
+                                                <UInt32 />
+                                            </DereferenceType>
+                                        </SizedArray>
+                                    </ClosedGenericParameters>
+                                    <GenericTypeDefinition>
+                                        <Class Id="17" Name="pilotArray" ReferenceClass="" Interface="">
+                                            <GenericParameters>
+                                                <Typedef TypedefName="T">
+                                                    <UnderlyingType>
+                                                        <Generic>
+                                                            <Constraints />
+                                                        </Generic>
+                                                    </UnderlyingType>
+                                                </Typedef>
+                                            </GenericParameters>
+                                            <GenericTypeDefinition>
+                                                <Class RefId="17" />
+                                            </GenericTypeDefinition>
+                                            <BaseType>
+                                                <Void />
+                                            </BaseType>
+                                            <Interfaces />
+                                            <Members>
+                                                <Field FieldAccessPolicy="ReadWrite" Name="pilotArray">
+                                                    <DataType>
+                                                        <Typedef TypedefName="T">
+                                                            <UnderlyingType>
+                                                                <Generic>
+                                                                    <Constraints />
+                                                                </Generic>
+                                                            </UnderlyingType>
+                                                        </Typedef>
+                                                    </DataType>
+                                                </Field>
+                                            </Members>
+                                        </Class>
+                                    </GenericTypeDefinition>
+                                    <BaseType>
+                                        <Void />
+                                    </BaseType>
+                                    <Interfaces />
+                                    <Members>
+                                        <Field FieldAccessPolicy="ReadWrite" Name="pilotArray">
+                                            <DataType>
+                                                <SizedArray LowerBound="16" UpperBound="16">
+                                                    <DereferenceType>
+                                                        <UInt32 />
+                                                    </DereferenceType>
+                                                </SizedArray>
+                                            </DataType>
+                                        </Field>
+                                    </Members>
+                                </Class>
+                                <Class Id="18" Name="vlc speed" ReferenceClass="" Interface="">
+                                    <ClosedGenericParameters>
+                                        <VariableArray>
+                                            <DereferenceType>
+                                                <UInt64 />
+                                            </DereferenceType>
+                                        </VariableArray>
+                                    </ClosedGenericParameters>
+                                    <GenericTypeDefinition>
+                                        <Class Id="19" Name="vlc speed" ReferenceClass="" Interface="">
+                                            <GenericParameters>
+                                                <Typedef TypedefName="T">
+                                                    <UnderlyingType>
+                                                        <Generic>
+                                                            <Constraints />
+                                                        </Generic>
+                                                    </UnderlyingType>
+                                                </Typedef>
+                                            </GenericParameters>
+                                            <GenericTypeDefinition>
+                                                <Class RefId="19" />
+                                            </GenericTypeDefinition>
+                                            <BaseType>
+                                                <Void />
+                                            </BaseType>
+                                            <Interfaces />
+                                            <Members>
+                                                <Function Id="20" Name="vlc speed.Read">
+                                                    <ReturnType>
+                                                        <Void />
+                                                    </ReturnType>
+                                                    <Parameters>
+                                                        <Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="Number of Elements">
+                                                            <DataType>
+                                                                <UInt32 />
+                                                            </DataType>
+                                                        </Parameter>
+                                                        <Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="Timeout (ms)">
+                                                            <DataType>
+                                                                <Int32 />
+                                                            </DataType>
+                                                        </Parameter>
+                                                        <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Required" Name="Data">
+                                                            <DataType>
+                                                                <Typedef TypedefName="T">
+                                                                    <UnderlyingType>
+                                                                        <Generic>
+                                                                            <Constraints />
+                                                                        </Generic>
+                                                                    </UnderlyingType>
+                                                                </Typedef>
+                                                            </DataType>
+                                                        </Parameter>
+                                                        <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Elements Remaining">
+                                                            <DataType>
+                                                                <UInt32 />
+                                                            </DataType>
+                                                        </Parameter>
+                                                    </Parameters>
+                                                    <ClosedGenericParameters />
+                                                    <GenericTypeDefinition>
+                                                        <Void />
+                                                    </GenericTypeDefinition>
+                                                </Function>
+                                                <Function Id="21" Name="vlc speed.Configure">
+                                                    <ReturnType>
+                                                        <Void />
+                                                    </ReturnType>
+                                                    <Parameters>
+                                                        <Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="Requested Depth">
+                                                            <DataType>
+                                                                <UInt32 />
+                                                            </DataType>
+                                                        </Parameter>
+                                                        <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth">
+                                                            <DataType>
+                                                                <UInt32 />
+                                                            </DataType>
+                                                        </Parameter>
+                                                    </Parameters>
+                                                    <ClosedGenericParameters />
+                                                    <GenericTypeDefinition>
+                                                        <Void />
+                                                    </GenericTypeDefinition>
+                                                </Function>
+                                                <Function Id="22" Name="vlc speed.Start">
+                                                    <ReturnType>
+                                                        <Void />
+                                                    </ReturnType>
+                                                    <Parameters />
+                                                    <ClosedGenericParameters />
+                                                    <GenericTypeDefinition>
+                                                        <Void />
+                                                    </GenericTypeDefinition>
+                                                </Function>
+                                                <Function Id="23" Name="vlc speed.Stop">
+                                                    <ReturnType>
+                                                        <Void />
+                                                    </ReturnType>
+                                                    <Parameters />
+                                                    <ClosedGenericParameters />
+                                                    <GenericTypeDefinition>
+                                                        <Void />
+                                                    </GenericTypeDefinition>
+                                                </Function>
+                                            </Members>
+                                        </Class>
+                                    </GenericTypeDefinition>
+                                    <BaseType>
+                                        <Void />
+                                    </BaseType>
+                                    <Interfaces />
+                                    <Members>
+                                        <Function Id="24" Name="vlc speed.Read">
+                                            <ReturnType>
+                                                <Void />
+                                            </ReturnType>
+                                            <Parameters>
+                                                <Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="Number of Elements">
+                                                    <DataType>
+                                                        <UInt32 />
+                                                    </DataType>
+                                                </Parameter>
+                                                <Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="Timeout (ms)">
+                                                    <DataType>
+                                                        <Int32 />
+                                                    </DataType>
+                                                </Parameter>
+                                                <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Required" Name="Data">
+                                                    <DataType>
+                                                        <VariableArray>
+                                                            <DereferenceType>
+                                                                <UInt64 />
+                                                            </DereferenceType>
+                                                        </VariableArray>
+                                                    </DataType>
+                                                </Parameter>
+                                                <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Elements Remaining">
+                                                    <DataType>
+                                                        <UInt32 />
+                                                    </DataType>
+                                                </Parameter>
+                                            </Parameters>
+                                            <ClosedGenericParameters />
+                                            <GenericTypeDefinition>
+                                                <Void />
+                                            </GenericTypeDefinition>
+                                        </Function>
+                                        <Function RefId="21" />
+                                        <Function RefId="22" />
+                                        <Function RefId="23" />
+                                    </Members>
+                                </Class>
+                                <Class Id="25" Name="DEBUG UP2" ReferenceClass="" Interface="">
+                                    <ClosedGenericParameters>
+                                        <VariableArray>
+                                            <DereferenceType>
+                                                <UInt64 />
+                                            </DereferenceType>
+                                        </VariableArray>
+                                    </ClosedGenericParameters>
+                                    <GenericTypeDefinition>
+                                        <Class Id="26" Name="DEBUG UP2" ReferenceClass="" Interface="">
+                                            <GenericParameters>
+                                                <Typedef TypedefName="T">
+                                                    <UnderlyingType>
+                                                        <Generic>
+                                                            <Constraints />
+                                                        </Generic>
+                                                    </UnderlyingType>
+                                                </Typedef>
+                                            </GenericParameters>
+                                            <GenericTypeDefinition>
+                                                <Class RefId="26" />
+                                            </GenericTypeDefinition>
+                                            <BaseType>
+                                                <Void />
+                                            </BaseType>
+                                            <Interfaces />
+                                            <Members>
+                                                <Function Id="27" Name="DEBUG UP2.Read">
+                                                    <ReturnType>
+                                                        <Void />
+                                                    </ReturnType>
+                                                    <Parameters>
+                                                        <Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="Number of Elements">
+                                                            <DataType>
+                                                                <UInt32 />
+                                                            </DataType>
+                                                        </Parameter>
+                                                        <Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="Timeout (ms)">
+                                                            <DataType>
+                                                                <Int32 />
+                                                            </DataType>
+                                                        </Parameter>
+                                                        <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Required" Name="Data">
+                                                            <DataType>
+                                                                <Typedef TypedefName="T">
+                                                                    <UnderlyingType>
+                                                                        <Generic>
+                                                                            <Constraints />
+                                                                        </Generic>
+                                                                    </UnderlyingType>
+                                                                </Typedef>
+                                                            </DataType>
+                                                        </Parameter>
+                                                        <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Elements Remaining">
+                                                            <DataType>
+                                                                <UInt32 />
+                                                            </DataType>
+                                                        </Parameter>
+                                                    </Parameters>
+                                                    <ClosedGenericParameters />
+                                                    <GenericTypeDefinition>
+                                                        <Void />
+                                                    </GenericTypeDefinition>
+                                                </Function>
+                                                <Function Id="28" Name="DEBUG UP2.Configure">
+                                                    <ReturnType>
+                                                        <Void />
+                                                    </ReturnType>
+                                                    <Parameters>
+                                                        <Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="Requested Depth">
+                                                            <DataType>
+                                                                <UInt32 />
+                                                            </DataType>
+                                                        </Parameter>
+                                                        <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth">
+                                                            <DataType>
+                                                                <UInt32 />
+                                                            </DataType>
+                                                        </Parameter>
+                                                    </Parameters>
+                                                    <ClosedGenericParameters />
+                                                    <GenericTypeDefinition>
+                                                        <Void />
+                                                    </GenericTypeDefinition>
+                                                </Function>
+                                                <Function Id="29" Name="DEBUG UP2.Start">
+                                                    <ReturnType>
+                                                        <Void />
+                                                    </ReturnType>
+                                                    <Parameters />
+                                                    <ClosedGenericParameters />
+                                                    <GenericTypeDefinition>
+                                                        <Void />
+                                                    </GenericTypeDefinition>
+                                                </Function>
+                                                <Function Id="30" Name="DEBUG UP2.Stop">
+                                                    <ReturnType>
+                                                        <Void />
+                                                    </ReturnType>
+                                                    <Parameters />
+                                                    <ClosedGenericParameters />
+                                                    <GenericTypeDefinition>
+                                                        <Void />
+                                                    </GenericTypeDefinition>
+                                                </Function>
+                                            </Members>
+                                        </Class>
+                                    </GenericTypeDefinition>
+                                    <BaseType>
+                                        <Void />
+                                    </BaseType>
+                                    <Interfaces />
+                                    <Members>
+                                        <Function Id="31" Name="DEBUG UP2.Read">
+                                            <ReturnType>
+                                                <Void />
+                                            </ReturnType>
+                                            <Parameters>
+                                                <Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="Number of Elements">
+                                                    <DataType>
+                                                        <UInt32 />
+                                                    </DataType>
+                                                </Parameter>
+                                                <Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="Timeout (ms)">
+                                                    <DataType>
+                                                        <Int32 />
+                                                    </DataType>
+                                                </Parameter>
+                                                <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Required" Name="Data">
+                                                    <DataType>
+                                                        <VariableArray>
+                                                            <DereferenceType>
+                                                                <UInt64 />
+                                                            </DereferenceType>
+                                                        </VariableArray>
+                                                    </DataType>
+                                                </Parameter>
+                                                <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Elements Remaining">
+                                                    <DataType>
+                                                        <UInt32 />
+                                                    </DataType>
+                                                </Parameter>
+                                            </Parameters>
+                                            <ClosedGenericParameters />
+                                            <GenericTypeDefinition>
+                                                <Void />
+                                            </GenericTypeDefinition>
+                                        </Function>
+                                        <Function RefId="28" />
+                                        <Function RefId="29" />
+                                        <Function RefId="30" />
+                                    </Members>
+                                </Class>
+                                <Class Id="32" Name="debug up1" ReferenceClass="" Interface="">
+                                    <ClosedGenericParameters>
+                                        <VariableArray>
+                                            <DereferenceType>
+                                                <UInt64 />
+                                            </DereferenceType>
+                                        </VariableArray>
+                                    </ClosedGenericParameters>
+                                    <GenericTypeDefinition>
+                                        <Class Id="33" Name="debug up1" ReferenceClass="" Interface="">
+                                            <GenericParameters>
+                                                <Typedef TypedefName="T">
+                                                    <UnderlyingType>
+                                                        <Generic>
+                                                            <Constraints />
+                                                        </Generic>
+                                                    </UnderlyingType>
+                                                </Typedef>
+                                            </GenericParameters>
+                                            <GenericTypeDefinition>
+                                                <Class RefId="33" />
+                                            </GenericTypeDefinition>
+                                            <BaseType>
+                                                <Void />
+                                            </BaseType>
+                                            <Interfaces />
+                                            <Members>
+                                                <Function Id="34" Name="debug up1.Read">
+                                                    <ReturnType>
+                                                        <Void />
+                                                    </ReturnType>
+                                                    <Parameters>
+                                                        <Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="Number of Elements">
+                                                            <DataType>
+                                                                <UInt32 />
+                                                            </DataType>
+                                                        </Parameter>
+                                                        <Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="Timeout (ms)">
+                                                            <DataType>
+                                                                <Int32 />
+                                                            </DataType>
+                                                        </Parameter>
+                                                        <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Required" Name="Data">
+                                                            <DataType>
+                                                                <Typedef TypedefName="T">
+                                                                    <UnderlyingType>
+                                                                        <Generic>
+                                                                            <Constraints />
+                                                                        </Generic>
+                                                                    </UnderlyingType>
+                                                                </Typedef>
+                                                            </DataType>
+                                                        </Parameter>
+                                                        <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Elements Remaining">
+                                                            <DataType>
+                                                                <UInt32 />
+                                                            </DataType>
+                                                        </Parameter>
+                                                    </Parameters>
+                                                    <ClosedGenericParameters />
+                                                    <GenericTypeDefinition>
+                                                        <Void />
+                                                    </GenericTypeDefinition>
+                                                </Function>
+                                                <Function Id="35" Name="debug up1.Configure">
+                                                    <ReturnType>
+                                                        <Void />
+                                                    </ReturnType>
+                                                    <Parameters>
+                                                        <Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="Requested Depth">
+                                                            <DataType>
+                                                                <UInt32 />
+                                                            </DataType>
+                                                        </Parameter>
+                                                        <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth">
+                                                            <DataType>
+                                                                <UInt32 />
+                                                            </DataType>
+                                                        </Parameter>
+                                                    </Parameters>
+                                                    <ClosedGenericParameters />
+                                                    <GenericTypeDefinition>
+                                                        <Void />
+                                                    </GenericTypeDefinition>
+                                                </Function>
+                                                <Function Id="36" Name="debug up1.Start">
+                                                    <ReturnType>
+                                                        <Void />
+                                                    </ReturnType>
+                                                    <Parameters />
+                                                    <ClosedGenericParameters />
+                                                    <GenericTypeDefinition>
+                                                        <Void />
+                                                    </GenericTypeDefinition>
+                                                </Function>
+                                                <Function Id="37" Name="debug up1.Stop">
+                                                    <ReturnType>
+                                                        <Void />
+                                                    </ReturnType>
+                                                    <Parameters />
+                                                    <ClosedGenericParameters />
+                                                    <GenericTypeDefinition>
+                                                        <Void />
+                                                    </GenericTypeDefinition>
+                                                </Function>
+                                            </Members>
+                                        </Class>
+                                    </GenericTypeDefinition>
+                                    <BaseType>
+                                        <Void />
+                                    </BaseType>
+                                    <Interfaces />
+                                    <Members>
+                                        <Function Id="38" Name="debug up1.Read">
+                                            <ReturnType>
+                                                <Void />
+                                            </ReturnType>
+                                            <Parameters>
+                                                <Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="Number of Elements">
+                                                    <DataType>
+                                                        <UInt32 />
+                                                    </DataType>
+                                                </Parameter>
+                                                <Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="Timeout (ms)">
+                                                    <DataType>
+                                                        <Int32 />
+                                                    </DataType>
+                                                </Parameter>
+                                                <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Required" Name="Data">
+                                                    <DataType>
+                                                        <VariableArray>
+                                                            <DereferenceType>
+                                                                <UInt64 />
+                                                            </DereferenceType>
+                                                        </VariableArray>
+                                                    </DataType>
+                                                </Parameter>
+                                                <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Elements Remaining">
+                                                    <DataType>
+                                                        <UInt32 />
+                                                    </DataType>
+                                                </Parameter>
+                                            </Parameters>
+                                            <ClosedGenericParameters />
+                                            <GenericTypeDefinition>
+                                                <Void />
+                                            </GenericTypeDefinition>
+                                        </Function>
+                                        <Function RefId="35" />
+                                        <Function RefId="36" />
+                                        <Function RefId="37" />
+                                    </Members>
+                                </Class>
+                                <Class Id="39" Name="P2P DEMOD" ReferenceClass="" Interface="">
+                                    <ClosedGenericParameters>
+                                        <VariableArray>
+                                            <DereferenceType>
+                                                <UInt32 />
+                                            </DereferenceType>
+                                        </VariableArray>
+                                    </ClosedGenericParameters>
+                                    <GenericTypeDefinition>
+                                        <Class Id="40" Name="P2P DEMOD" ReferenceClass="" Interface="">
+                                            <GenericParameters>
+                                                <Typedef TypedefName="T">
+                                                    <UnderlyingType>
+                                                        <Generic>
+                                                            <Constraints />
+                                                        </Generic>
+                                                    </UnderlyingType>
+                                                </Typedef>
+                                            </GenericParameters>
+                                            <GenericTypeDefinition>
+                                                <Class RefId="40" />
+                                            </GenericTypeDefinition>
+                                            <BaseType>
+                                                <Void />
+                                            </BaseType>
+                                            <Interfaces />
+                                            <Members>
+                                                <Function Id="41" Name="P2P DEMOD.PeerReader">
+                                                    <ReturnType>
+                                                        <Void />
+                                                    </ReturnType>
+                                                    <Parameters>
+                                                        <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Required" Name="Data">
+                                                            <DataType>
+                                                                <Typedef TypedefName="T">
+                                                                    <UnderlyingType>
+                                                                        <Generic>
+                                                                            <Constraints />
+                                                                        </Generic>
+                                                                    </UnderlyingType>
+                                                                </Typedef>
+                                                            </DataType>
+                                                        </Parameter>
+                                                    </Parameters>
+                                                    <ClosedGenericParameters />
+                                                    <GenericTypeDefinition>
+                                                        <Void />
+                                                    </GenericTypeDefinition>
+                                                </Function>
+                                            </Members>
+                                        </Class>
+                                    </GenericTypeDefinition>
+                                    <BaseType>
+                                        <Void />
+                                    </BaseType>
+                                    <Interfaces />
+                                    <Members>
+                                        <Function Id="42" Name="P2P DEMOD.PeerReader">
+                                            <ReturnType>
+                                                <Void />
+                                            </ReturnType>
+                                            <Parameters>
+                                                <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Required" Name="Data">
+                                                    <DataType>
+                                                        <VariableArray>
+                                                            <DereferenceType>
+                                                                <UInt32 />
+                                                            </DereferenceType>
+                                                        </VariableArray>
+                                                    </DataType>
+                                                </Parameter>
+                                            </Parameters>
+                                            <ClosedGenericParameters />
+                                            <GenericTypeDefinition>
+                                                <Void />
+                                            </GenericTypeDefinition>
+                                        </Function>
+                                    </Members>
+                                </Class>
+                                <Class Id="43" Name="decode fifo up" ReferenceClass="" Interface="">
+                                    <ClosedGenericParameters>
+                                        <VariableArray>
+                                            <DereferenceType>
+                                                <UInt8 />
+                                            </DereferenceType>
+                                        </VariableArray>
+                                    </ClosedGenericParameters>
+                                    <GenericTypeDefinition>
+                                        <Class Id="44" Name="decode fifo up" ReferenceClass="" Interface="">
+                                            <GenericParameters>
+                                                <Typedef TypedefName="T">
+                                                    <UnderlyingType>
+                                                        <Generic>
+                                                            <Constraints />
+                                                        </Generic>
+                                                    </UnderlyingType>
+                                                </Typedef>
+                                            </GenericParameters>
+                                            <GenericTypeDefinition>
+                                                <Class RefId="44" />
+                                            </GenericTypeDefinition>
+                                            <BaseType>
+                                                <Void />
+                                            </BaseType>
+                                            <Interfaces />
+                                            <Members>
+                                                <Function Id="45" Name="decode fifo up.Read">
+                                                    <ReturnType>
+                                                        <Void />
+                                                    </ReturnType>
+                                                    <Parameters>
+                                                        <Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="Number of Elements">
+                                                            <DataType>
+                                                                <UInt32 />
+                                                            </DataType>
+                                                        </Parameter>
+                                                        <Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="Timeout (ms)">
+                                                            <DataType>
+                                                                <Int32 />
+                                                            </DataType>
+                                                        </Parameter>
+                                                        <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Required" Name="Data">
+                                                            <DataType>
+                                                                <Typedef TypedefName="T">
+                                                                    <UnderlyingType>
+                                                                        <Generic>
+                                                                            <Constraints />
+                                                                        </Generic>
+                                                                    </UnderlyingType>
+                                                                </Typedef>
+                                                            </DataType>
+                                                        </Parameter>
+                                                        <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Elements Remaining">
+                                                            <DataType>
+                                                                <UInt32 />
+                                                            </DataType>
+                                                        </Parameter>
+                                                    </Parameters>
+                                                    <ClosedGenericParameters />
+                                                    <GenericTypeDefinition>
+                                                        <Void />
+                                                    </GenericTypeDefinition>
+                                                </Function>
+                                                <Function Id="46" Name="decode fifo up.Configure">
+                                                    <ReturnType>
+                                                        <Void />
+                                                    </ReturnType>
+                                                    <Parameters>
+                                                        <Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="Requested Depth">
+                                                            <DataType>
+                                                                <UInt32 />
+                                                            </DataType>
+                                                        </Parameter>
+                                                        <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth">
+                                                            <DataType>
+                                                                <UInt32 />
+                                                            </DataType>
+                                                        </Parameter>
+                                                    </Parameters>
+                                                    <ClosedGenericParameters />
+                                                    <GenericTypeDefinition>
+                                                        <Void />
+                                                    </GenericTypeDefinition>
+                                                </Function>
+                                                <Function Id="47" Name="decode fifo up.Start">
+                                                    <ReturnType>
+                                                        <Void />
+                                                    </ReturnType>
+                                                    <Parameters />
+                                                    <ClosedGenericParameters />
+                                                    <GenericTypeDefinition>
+                                                        <Void />
+                                                    </GenericTypeDefinition>
+                                                </Function>
+                                                <Function Id="48" Name="decode fifo up.Stop">
+                                                    <ReturnType>
+                                                        <Void />
+                                                    </ReturnType>
+                                                    <Parameters />
+                                                    <ClosedGenericParameters />
+                                                    <GenericTypeDefinition>
+                                                        <Void />
+                                                    </GenericTypeDefinition>
+                                                </Function>
+                                            </Members>
+                                        </Class>
+                                    </GenericTypeDefinition>
+                                    <BaseType>
+                                        <Void />
+                                    </BaseType>
+                                    <Interfaces />
+                                    <Members>
+                                        <Function Id="49" Name="decode fifo up.Read">
+                                            <ReturnType>
+                                                <Void />
+                                            </ReturnType>
+                                            <Parameters>
+                                                <Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="Number of Elements">
+                                                    <DataType>
+                                                        <UInt32 />
+                                                    </DataType>
+                                                </Parameter>
+                                                <Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="Timeout (ms)">
+                                                    <DataType>
+                                                        <Int32 />
+                                                    </DataType>
+                                                </Parameter>
+                                                <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Required" Name="Data">
+                                                    <DataType>
+                                                        <VariableArray>
+                                                            <DereferenceType>
+                                                                <UInt8 />
+                                                            </DereferenceType>
+                                                        </VariableArray>
+                                                    </DataType>
+                                                </Parameter>
+                                                <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Elements Remaining">
+                                                    <DataType>
+                                                        <UInt32 />
+                                                    </DataType>
+                                                </Parameter>
+                                            </Parameters>
+                                            <ClosedGenericParameters />
+                                            <GenericTypeDefinition>
+                                                <Void />
+                                            </GenericTypeDefinition>
+                                        </Function>
+                                        <Function RefId="46" />
+                                        <Function RefId="47" />
+                                        <Function RefId="48" />
+                                    </Members>
+                                </Class>
+                            </Constraints>
+                        </Generic>
+                    </AttributedType>
+                    <AttributeValues>
+                        <AttributeValue Name="NI_IOClass" Value="[string]Interface" />
+                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+                    </AttributeValues>
+                </Attributed>
+            </p.TypeReference>
+        </DataTypeReferenceTable>
+    </VirtualInstrument>
+</SourceFile>

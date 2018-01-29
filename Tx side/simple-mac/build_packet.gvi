@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile xmlns="http://www.ni.com/PlatformFramework">
+    <SourceModelFeatureSet>
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="3.0.0.49154" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="Editor" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/PlatformFramework" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="3.0.0.49152" />
+    </SourceModelFeatureSet>
+    <VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+        <Icon Id="2" ListViewIconCrop="0 0 50 50" xmlns="http://www.ni.com/PlatformFramework">
+            <IconPanel Height="[float]50" Id="3" Width="[float]50">
+                <IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" TemplateName="Gray">
+                    <Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" />
+                    <Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" />
+                    <FileNameText FileNameText="[bool]True" Font="[SMFont]0,6," HorizontalAlignment="[HorizontalAlignment]Left" Id="7" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]build_packet" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" VerticalAlignment="[VerticalAlignment]Top" />
+                </IconTemplate>
+                <Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Id="8" Margin="[SMThickness]3,3,3,3" />
+            </IconPanel>
+        </Icon>
+        <ConnectorPane Height="50" Id="9" ListViewHeight="105" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
+            <ConnectorPaneTerminal ListViewHotspot="0 80" Parameter="143" />
+            <ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 50" Parameter="46" />
+            <ConnectorPaneTerminal Hotspot="0 25" />
+            <ConnectorPaneTerminal Hotspot="0 35" />
+            <ConnectorPaneTerminal Hotspot="0 45" />
+            <ConnectorPaneTerminal Hotspot="15 0" ListViewHotspot="0 35" Parameter="56" />
+            <ConnectorPaneTerminal Hotspot="25 0" />
+            <ConnectorPaneTerminal Hotspot="35 0" />
+            <ConnectorPaneTerminal Hotspot="50 5" ListViewHotspot="150 95" Parameter="147" />
+            <ConnectorPaneTerminal Hotspot="50 15" ListViewHotspot="150 65" Parameter="51" />
+            <ConnectorPaneTerminal Hotspot="50 25" />
+            <ConnectorPaneTerminal Hotspot="50 35" />
+            <ConnectorPaneTerminal Hotspot="50 45" />
+            <ConnectorPaneTerminal Hotspot="15 50" />
+            <ConnectorPaneTerminal Hotspot="25 50" />
+            <ConnectorPaneTerminal Hotspot="35 50" />
+        </ConnectorPane>
+        <MethodDocumentation xmlns="http://www.ni.com/PlatformFramework" />
+        <DiagramUnplacedItems Id="10" />
+        <FrontPanelUnplacedItems Id="11">
+            <ArrayViewer ArrayElement="[UIModel]48" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Id="47" Name="[string]data in" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Value="{DataItemBinding Id=46}" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                <p.DefaultElementValue>0</p.DefaultElementValue>
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="48" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Name="[string]Child" ValueType="[Type]UInt8" Width="[float]69" />
+            </ArrayViewer>
+            <OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]40" Id="144" Name="[string]Input" RefnumType="[Type]@2111178075_0" Value="{DataItemBinding Id=143}" Width="[float]80" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]40" Id="148" Name="[string]Output" RefnumType="[Type]@2111178075_0" Value="{DataItemBinding Id=147}" Width="[float]80" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <ArrayViewer ArrayElement="[UIModel]53" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="52" Label="[UIModel]173" Left="[float]580" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]103" Value="{DataItemBinding Id=51}" Width="[float]129" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                <p.DefaultElementValue>0</p.DefaultElementValue>
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="53" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]124" Name="[string]Child" Top="[float]7" Value="[byte]76" ValueType="[Type]UInt8" Width="[float]69" />
+                <Label Id="173" IsVisualChild="[bool]False" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]52" Left="[float]580" Locked="[bool]True" Text="[string]data out" Top="[float]80" xmlns="http://www.ni.com/LabVIEW.VI" />
+            </ArrayViewer>
+        </FrontPanelUnplacedItems>
+        <BlockDiagram Id="12">
+            <DataAccessor Bounds="295 335 40 15" DataItem="46" Id="44" Label="45">
+                <Terminal DataType="UInt8[]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="44" Bounds="250 335 40 16" Id="45" Text="data in" xmlns="http://www.ni.com/PlatformFramework" />
+            <DataAccessor Bounds="890 335 40 15" DataItem="51" Id="49" Label="50">
+                <Terminal DataType="UInt8[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="49" Bounds="935 335 49 16" Id="50" Text="data out" xmlns="http://www.ni.com/PlatformFramework" />
+            <DataAccessor Bounds="300 185 40 15" DataItem="56" Id="54" Label="55">
+                <Terminal DataType="@-798073641_0" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="54" Bounds="241 185 54 16" Id="55" Text="Template" xmlns="http://www.ni.com/PlatformFramework" />
+            <BuildArray Bounds="570 225 40 50" CanToggle="False" ConcatenateInputs="True" Id="76" Terminals="outArray=94, c0t0v=89, c1t0v=90, c2t0v=91, c3t0v=92, c4t0v=93" VerticalChunkCount="5" />
+            <BuildArray Bounds="710 215 40 40" CanToggle="False" ConcatenateInputs="True" Id="81" Terminals="outArray=182, c0t0v=95, c1t0v=85, c2t0v=96, c3t0v=97" VerticalChunkCount="4" />
+            <BooleanArrayToNumber Bounds="640 225 30 10" Id="82">
+                <ConfigurableDataTypeTerminal DataType="UInt8" DesiredType="UInt8" Direction="Output" GuardBits="12" Hotspot="30 5" Id="number" TypeOverrideKind="Exact" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+            </BooleanArrayToNumber>
+            <Wire Id="85" Joints="N(82:number) N(81:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <PropertyNode Bounds="385 185 150 135" HasErrorTerminals="False" Id="87" InstanceDataType="@-798073641_0" Template="List" Terminals="instance in=88~0:5, instance out~150:5, c0t0v=95~150:35, c1t0v=89~150:50, c2t0v=90~150:65, c3t0v=91~150:80, c4t0v=92~150:95, c5t0v=93~150:110, c6t0v=96~150:125" VerticalChunkCount="7">
+                <p.PropertyItem IsWrite="False">
+                    <PathElement>Sync Header</PathElement>
+                </p.PropertyItem>
+                <p.PropertyItem IsWrite="False">
+                    <PathElement>frame type</PathElement>
+                </p.PropertyItem>
+                <p.PropertyItem IsWrite="False">
+                    <PathElement>receiver id</PathElement>
+                </p.PropertyItem>
+                <p.PropertyItem IsWrite="False">
+                    <PathElement>RealTime?</PathElement>
+                </p.PropertyItem>
+                <p.PropertyItem IsWrite="False">
+                    <PathElement>Finished?</PathElement>
+                </p.PropertyItem>
+                <p.PropertyItem IsWrite="False">
+                    <PathElement>Flipped?</PathElement>
+                </p.PropertyItem>
+                <p.PropertyItem IsWrite="False">
+                    <PathElement>split position</PathElement>
+                </p.PropertyItem>
+            </PropertyNode>
+            <Wire Id="88" Joints="N(54:Value) N(87:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="89" Joints="N(87:c1t0v) h(10) v(-5) N(76:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="90" Joints="N(87:c2t0v) h(15) v(-10) N(76:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="91" Joints="N(87:c3t0v) h(20) v(-15) N(76:c2t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="92" Joints="N(87:c4t0v) h(25) v(-20) N(76:c3t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="93" Joints="N(87:c5t0v) h(30) v(-25) N(76:c4t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="94" Joints="N(76:outArray) N(82:Boolean array)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="95" Joints="N(87:c0t0v) N(81:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="96" Joints="N(87:c6t0v) h(150) v(-70) N(81:c2t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="97" Joints="N(44:Value) h(365) v(-90) N(81:c3t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <DataAccessor Bounds="300 125 40 15" DataItem="143" Id="141" Label="142">
+                <Terminal DataType="@2111178075_0" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="141" Bounds="264 125 31 16" Id="142" Text="Input" xmlns="http://www.ni.com/PlatformFramework" />
+            <DataAccessor Bounds="885 125 40 15" DataItem="147" Id="145" Label="146">
+                <Terminal DataType="@2111178075_0" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="145" Bounds="930 125 42 16" Id="146" Text="Output" xmlns="http://www.ni.com/PlatformFramework" />
+            <EnqueueElement Bounds="825 125 40 40" Id="149" />
+            <Wire Id="150" Joints="N(141:Value) N(149:queue)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="151" Joints="N(149:queue out) N(145:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="182" Joints="N(81:outArray) h(70) B(1) v(-80) N(149:element) B(1) v(120) N(49:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+        </BlockDiagram>
+        <CPFrontPanel Height="[float]1600" Id="13" Width="[float]2000">
+            <Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@-798073641_0" Height="[float]489" Id="57" Label="[UIModel]183" Left="[float]387" Top="[float]61" Value="{DataItemBinding Id=56}" Width="[float]147">
+                <ArrayViewer ArrayElement="[UIModel]72" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="58" Label="[UIModel]65" Left="[float]5" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]23" Value="{ClusterBinding FieldName=Sync\ Header}" Width="[float]129" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                    <p.DefaultElementValue>0</p.DefaultElementValue>
+                    <NumericText BaseName="[string]Numeric" Height="[float]22" Id="72" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Name="[string]Child" ValueType="[Type]UInt8" Width="[float]69" />
+                </ArrayViewer>
+                <ArrayViewer ArrayElement="[UIModel]73" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]64" Id="59" Label="[UIModel]66" Left="[float]5" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]79" Value="{ClusterBinding FieldName=frame\ type}" Width="[float]110" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                    <p.DefaultElementValue>False</p.DefaultElementValue>
+                    <Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="73" IsReadOnly="[bool]False" Name="[string]Child" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TrueContent="[string]On" Width="[float]50" />
+                </ArrayViewer>
+                <ArrayViewer ArrayElement="[UIModel]74" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]64" Id="60" Label="[UIModel]67" Left="[float]5" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]163" Value="{ClusterBinding FieldName=receiver\ id}" Width="[float]110" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                    <p.DefaultElementValue>False</p.DefaultElementValue>
+                    <Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="74" IsReadOnly="[bool]False" Left="[float]53" Name="[string]Child" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]7" TrueContent="[string]On" Value="[bool]False" Width="[float]50" />
+                </ArrayViewer>
+                <Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="61" IsReadOnly="[bool]False" Label="[UIModel]68" Left="[float]5" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]247" TrueContent="[string]On" Value="{ClusterBinding FieldName=RealTime?}" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+                <Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="62" IsReadOnly="[bool]False" Label="[UIModel]69" Left="[float]5" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]317" TrueContent="[string]On" Value="{ClusterBinding FieldName=Finished?}" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+                <Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="63" IsReadOnly="[bool]False" Label="[UIModel]70" Left="[float]5" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]387" TrueContent="[string]On" Value="{ClusterBinding FieldName=Flipped?}" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="64" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]71" Left="[float]5" Top="[float]457" Value="{ClusterBinding FieldName=split\ position}" ValueType="[Type]UInt8" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+                <Label Id="65" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]58" Left="[float]5" Locked="[bool]True" Text="[string]Sync Header" Top="[float]0" />
+                <Label Id="66" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]59" Left="[float]5" Locked="[bool]True" Text="[string]frame type" Top="[float]56" />
+                <Label Id="67" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]60" Left="[float]5" Locked="[bool]True" Text="[string]receiver id" Top="[float]140" />
+                <Label Id="68" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]61" Left="[float]5" Locked="[bool]True" Text="[string]RealTime?" Top="[float]224" />
+                <Label Id="69" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]62" Left="[float]5" Locked="[bool]True" Text="[string]Finished?" Top="[float]294" />
+                <Label Id="70" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]63" Left="[float]5" Locked="[bool]True" Text="[string]Flipped?" Top="[float]364" />
+                <Label Id="71" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]64" Left="[float]5" Locked="[bool]True" Text="[string]split position" Top="[float]434" />
+            </Cluster>
+            <Label Id="183" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]57" Left="[float]387" Locked="[bool]True" Text="[string]Template" Top="[float]38" />
+        </CPFrontPanel>
+        <DataItem CallDirection="Input" CallIndex="1" DataType="UInt8[]" Id="46" Name="data in" />
+        <DataItem CallDirection="Output" CallIndex="0" DataType="UInt8[]" Id="51" Name="data out" />
+        <DataItem CallDirection="Input" CallIndex="0" DataType="@-798073641_0" Id="56" Name="Template">
+            <p.DefaultValue>
+                <Cluster>
+                    <Field1>null</Field1>
+                    <Field2>
+                        <Array Lengths="2">
+                            <Elements>False,True</Elements>
+                        </Array>
+                    </Field2>
+                    <Field3>
+                        <Array Lengths="3">
+                            <Elements>False,False,False</Elements>
+                        </Array>
+                    </Field3>
+                    <Field4>False</Field4>
+                    <Field5>False</Field5>
+                    <Field6>False</Field6>
+                    <Field7>0</Field7>
+                </Cluster>
+            </p.DefaultValue>
+        </DataItem>
+        <DataItem CallDirection="Input" CallIndex="2" DataType="@2111178075_0" Id="143" Name="Input">
+            <p.DefaultValue>0</p.DefaultValue>
+        </DataItem>
+        <DataItem CallDirection="Output" CallIndex="1" DataType="@2111178075_0" Id="147" Name="Output">
+            <p.DefaultValue>0</p.DefaultValue>
+        </DataItem>
+        <DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+            <p.TypeReference TypeId="2111178075_0">
+                <Attributed>
+                    <AttributedType>
+                        <Class Id="1" Name="NationalInstruments.SourceModel.DataTypes.Queue" ReferenceClass="">
+                            <ClosedGenericParameters>
+                                <VariableArray>
+                                    <DereferenceType>
+                                        <UInt8 />
+                                    </DereferenceType>
+                                </VariableArray>
+                            </ClosedGenericParameters>
+                            <GenericTypeDefinition>
+                                <Attributed>
+                                    <AttributedType>
+                                        <Class Id="2" Name="NationalInstruments.SourceModel.DataTypes.Queue" ReferenceClass="">
+                                            <GenericParameters>
+                                                <Typedef TypedefName="DataType">
+                                                    <UnderlyingType>
+                                                        <Generic>
+                                                            <Constraints />
+                                                        </Generic>
+                                                    </UnderlyingType>
+                                                </Typedef>
+                                            </GenericParameters>
+                                            <GenericTypeDefinition>
+                                                <Class RefId="2" />
+                                            </GenericTypeDefinition>
+                                            <BaseType>
+                                                <Void />
+                                            </BaseType>
+                                            <Interfaces />
+                                            <Members />
+                                        </Class>
+                                    </AttributedType>
+                                    <AttributeValues>
+                                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+                                    </AttributeValues>
+                                </Attributed>
+                            </GenericTypeDefinition>
+                            <BaseType>
+                                <Void />
+                            </BaseType>
+                            <Interfaces />
+                            <Members />
+                        </Class>
+                    </AttributedType>
+                    <AttributeValues>
+                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+                    </AttributeValues>
+                </Attributed>
+            </p.TypeReference>
+            <p.TypeReference TypeId="-798073641_0">
+                <Class Id="1" Name="" Cluster="">
+                    <ClosedGenericParameters />
+                    <GenericTypeDefinition>
+                        <Void />
+                    </GenericTypeDefinition>
+                    <BaseType>
+                        <Void />
+                    </BaseType>
+                    <Interfaces />
+                    <Members>
+                        <Field FieldAccessPolicy="ReadWrite" Name="Sync Header">
+                            <DataType>
+                                <VariableArray>
+                                    <DereferenceType>
+                                        <UInt8 />
+                                    </DereferenceType>
+                                </VariableArray>
+                            </DataType>
+                        </Field>
+                        <Field FieldAccessPolicy="ReadWrite" Name="frame type">
+                            <DataType>
+                                <VariableArray>
+                                    <DereferenceType>
+                                        <Boolean />
+                                    </DereferenceType>
+                                </VariableArray>
+                            </DataType>
+                        </Field>
+                        <Field FieldAccessPolicy="ReadWrite" Name="receiver id">
+                            <DataType>
+                                <VariableArray>
+                                    <DereferenceType>
+                                        <Boolean />
+                                    </DereferenceType>
+                                </VariableArray>
+                            </DataType>
+                        </Field>
+                        <Field FieldAccessPolicy="ReadWrite" Name="RealTime?">
+                            <DataType>
+                                <Boolean />
+                            </DataType>
+                        </Field>
+                        <Field FieldAccessPolicy="ReadWrite" Name="Finished?">
+                            <DataType>
+                                <Boolean />
+                            </DataType>
+                        </Field>
+                        <Field FieldAccessPolicy="ReadWrite" Name="Flipped?">
+                            <DataType>
+                                <Boolean />
+                            </DataType>
+                        </Field>
+                        <Field FieldAccessPolicy="ReadWrite" Name="split position">
+                            <DataType>
+                                <UInt8 />
+                            </DataType>
+                        </Field>
+                    </Members>
+                </Class>
+            </p.TypeReference>
+        </DataTypeReferenceTable>
+    </VirtualInstrument>
+</SourceFile>
