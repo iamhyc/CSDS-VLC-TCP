@@ -8,7 +8,7 @@ NI Chasis + NI USRP-2953R + NI FlexRIO-5782; Windows7 only.
 
 ### Instruction
 
-1. Program Assembly
+1. #### Program Assembly
 
    a. Install `Python 2.7.x` and `pip` in system environment virable;
 
@@ -28,13 +28,13 @@ NI Chasis + NI USRP-2953R + NI FlexRIO-5782; Windows7 only.
 
    ​	`iface_back` , uplink interface to router;
 
-   ​	`iface_front` , downlink interface to client as  
+   ​	`iface_front` , downlink interface to client as  AP;
 
    > P.S. you sould staticly bind those IP address to your VLC Tx wireless NIC, or carry out [ARP Spoof](http://www.secdev.org/projects/scapy/demo.html).
    >
    > P.S.S. run `python test.py` to find out your (network interface name, interface Index, IP Address)
 
-2. System Network Setup
+2. #### System Network Setup
 
    ![Arch](./pictures/arch.png)
 
@@ -54,7 +54,7 @@ NI Chasis + NI USRP-2953R + NI FlexRIO-5782; Windows7 only.
 
    ​	d. share this connection with the *virtual hostednetwork* in `Windows Network Connections` panel
 
-3. System Running Setup
+3. #### System Running Setup
 
    ```markdown
    iperf passthrough test: (connect server to the **WAN port** on router)
@@ -78,14 +78,5 @@ NI Chasis + NI USRP-2953R + NI FlexRIO-5782; Windows7 only.
 
    ​	Then running CSDS program;
 
-   > P.S. run python programm as **Administrator**; user `cmder` to have better experience.
+   > P.S. run python programm as **Administrator**; use `cmder` to have better experience.
 
-### Scenario
-
-1. Same-Cell Interference
-
-   (tbd.)
-
-2. Inter-Cell Interference
-
-   (tbd.)

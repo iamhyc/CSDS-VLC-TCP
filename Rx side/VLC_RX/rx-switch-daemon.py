@@ -7,7 +7,7 @@
 import socket, threading, Queue
 from Utility import *
 from RxRegisterDaemon import RxRegisterDaemon
-import pydivert, ifaddr
+import pydivert
 from time import time
 
 global w_ul, w_dl
