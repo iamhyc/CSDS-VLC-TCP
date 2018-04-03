@@ -1,5 +1,5 @@
 #!/bin/bash
-diff -eZ $1 $2 > result.txt 2>/dev/null
+diff -Z $1 $2 > result.txt
 a=`wc -l text_tx.txt | awk -F" " '{print $1}'`
 b=`cat result.txt | grep -e "c" | wc -l`
 echo -e "Total Lines:\t\t$a"
